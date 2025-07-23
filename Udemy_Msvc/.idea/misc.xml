@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../eureka-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-items/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-products/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-gateway-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../config-server/pom.xml" />
+        <option value="$PROJECT_DIR$/../libs-msvc-commons/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-users/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-oauth/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-gateway-server - reactivo_web-flux/pom.xml" />
+        <option value="$PROJECT_DIR$/../msvc-gateway-server_web-servlet_mvc/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/../msvc-gateway-server/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_24" default="true" project-jdk-name="24" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,36 @@
+Comando construir jar:
+
+Dentro de la carpeta del proyecto lanzamos: 
+
+	./mvnw clean package 
+
+	Podemos agregar -DskipTests
+
+Si el proceso termina con BUILD SUCCESS, dentro de la carpeta target se genera un archivo terminado en .jar, este es el ejecutable de nuestro proyecto.
+
+Docker:
+Crear network:
+
+	docker network create <nombre-de-la-red> 
+
+Crear imagen
+
+Después abrimos una terminal dentro de la carpeta del proyecto y construimos la imagen con:
+
+	docker build -t <nombre-de-la-imagen>:<versión> .
+
+	Si en :<versión> no ponemos nada, por defecto la versión será latest
+
+Crear contenedor y levantar:
+
+	docker run -p <puerto-host-o-externo>:<puerto-contenedor-o-interno> --name <nombre-contenedor> --network <nombre-de-red-creada-antes> <nombre-de-imagen-creada>:<opcional-expecificar-versión>
+
+	* Si queremos que el puerto sea dinámico en lugar de -p ponemos -P quedando así:
+
+	docker run -P --name <nombre-contenedor> --network <nombre-de-red-creada-antes> <nombre-de-imagen-creada>:<opcional-expecificar-versión>
+
+
+
+Levantar contenedor:
+
+	docker container start <id-container>

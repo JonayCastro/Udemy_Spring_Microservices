@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="config-server" />
+        <module name="msvc-products" />
+        <module name="msvc-gateway-server" />
+        <module name="msvc-oauth" />
+        <module name="msvc-items" />
+        <module name="msvc-gateway-server (1)" />
+        <module name="msvc-users" />
+        <module name="libs-msvc-commons" />
+        <module name="eureka-server" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="libs-msvc-commons" options="-parameters" />
+      <module name="msvc-gateway-server" options="-parameters" />
+      <module name="msvc-gateway-server (1)" options="-parameters" />
+      <module name="msvc-items" options="-parameters" />
+      <module name="msvc-oauth" options="-parameters" />
+      <module name="msvc-products" options="-parameters" />
+      <module name="msvc-users" options="-parameters" />
+    </option>
+  </component>
+</project>
