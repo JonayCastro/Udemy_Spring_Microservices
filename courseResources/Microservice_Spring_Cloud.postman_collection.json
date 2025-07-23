@@ -1,0 +1,610 @@
+{
+	"info": {
+		"_postman_id": "87ec53db-8ed7-4f9d-af5b-cce2fdabe206",
+		"name": "Microservice_Spring_Cloud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "37197897"
+	},
+	"item": [
+		{
+			"name": "GateWay",
+			"item": [
+				{
+					"name": "Items",
+					"item": [
+						{
+							"name": "fetchConfigGateWay",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8090/api/items/fetch-configs"
+							},
+							"response": []
+						},
+						{
+							"name": "getByProductIdGateWay",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": "http://localhost:8090/api/items/155"
+							},
+							"response": []
+						},
+						{
+							"name": "getAllProductsGateWay",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "{{access_token}}"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": "http://localhost:8090/api/items"
+							},
+							"response": []
+						},
+						{
+							"name": "createProductGateWay",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Otro creado con feing\",\r\n    \"price\": 50000,\r\n    \"createdAt\": \"2025-06-18\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/items"
+							},
+							"response": []
+						},
+						{
+							"name": "updateProductGateWay",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Otro creado con feing\",\r\n    \"price\": 3000.0,\r\n    \"createdAt\": \"2025-06-18\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/items/156"
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProductGateWay",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8090/api/items/153"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "getByProductIdGateWay",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": "http://localhost:8090/api/products/154"
+							},
+							"response": []
+						},
+						{
+							"name": "getAllProductsGateWay",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiJlYjNiNzBlZS1jZGRjLTRmMGEtOTEwZC01MjBiODdiYzRlYzUiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJKb25heTIiLCJhdWQiOiJnYXRld2F5LWFwcCIsIm5iZiI6MTc1MTI3MTk0MywiZGF0YSI6ImRhdG9zIGFkaWNpb25hbGVzIGVuIGVsIHRva2VuIiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6Imh0dHA6Ly8xMjcuMC4wLjE6OTEwMCIsImV4cCI6MTc1MTI3OTE0MywiaWF0IjoxNzUxMjcxOTQzLCJqdGkiOiJlOWExY2E5ZC1mM2UyLTRmOTQtOTM0YS1jYTJiNzE3ZWViOTUifQ.RiKt98iFqTMF20Pirz1TURshYSN94T_rCpgP8jQFvfqNwZCHSky0GwWJ3bhHhSv_kPq02d3MCMz1qpGl_ryAaq7uFKenxM50HUKKznYJ4893Rl9gTbBbmY6dh0KDynN73yAkx3Rr2dbBYFMwXEqtNeCC3qwM8sGff68UYbltO8WRU3_E0hJLUd4CrXaEdepPM73Poe4DXu4nMqKke-fgo8bQLU-2EG2dTPW0PXVEKk1GJlKI3EA8F2NwNQlDBUHY5sqGnw17AFLjwdQ37dns3Y8zso9_IjNf0wGJY6eMXlwviYwHVi-mIK6vMLZFlsElC94RMIjz9qQeAD0YLLCiig"
+									}
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "accept",
+										"value": "application/json"
+									}
+								],
+								"url": "http://localhost:8090/api/products"
+							},
+							"response": []
+						},
+						{
+							"name": "createProductGateWay",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Producto de prueba\",\r\n    \"price\": 30,\r\n    \"createdAt\": \"2025-06-18\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/products"
+							},
+							"response": []
+						},
+						{
+							"name": "updateProductGateWay",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Producto de prueba\",\r\n    \"price\": 40.0,\r\n    \"createdAt\": \"2025-06-18\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/products/154"
+							},
+							"response": []
+						},
+						{
+							"name": "deleteProductGateWay",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": "http://localhost:8090/api/products/154"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "getUsers",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8090/api/users"
+							},
+							"response": []
+						},
+						{
+							"name": "createUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiI5MGY2N2EzZC0wYjZlLTQzYzctOTBlNi0wM2UyZGMyZDBhN2IiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJKb25heTIiLCJhdWQiOiJnYXRld2F5LWFwcCIsIm5iZiI6MTc1MDc1ODAxNywiZGF0YSI6ImRhdG9zIGFkaWNpb25hbGVzIGVuIGVsIHRva2VuIiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6Imh0dHA6Ly8xMjcuMC4wLjE6OTEwMCIsImV4cCI6MTc1MDc2NTIxNywiaWF0IjoxNzUwNzU4MDE3LCJqdGkiOiI5NDNkOGJiYi1iM2NlLTQzN2QtOWYzMy02NzY0MDI3NzVhNjcifQ.LbHkEh3Mn3e3IuIEYB8uWOvbMI1ygDrqgU0PaAfoAVOGqW5jL9E_HqL958KSZHmXxEQGTFVKF3AmhSKKJ-cfZmIry2OY_5sfLiQRxMDx8PiwAGiol6eb1E44ODmuVZS9fhSsONNRqLYaP9QRBxRVQge68RJs3tQLxPG6PbOvwRqvhlkLQPBakqwvyUmKP65omHz3rowpC8GlIAQm402RgSOI-cFrYeGHsBNhEkuqg-uQ84nin4KxrZDc6mrReJ8-qGLKfbkoKtQhOb8yM-yFLtUkCcwX3_Erp7ouTw6h3E7SqFtHu-RlLjSDTf02d2lLs1SRni2s9MJXAbTWTCOzlw"
+									}
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"pepe\",\r\n    \"password\": \"1234\",\r\n    \"email\": \"pepe@email.com\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/users"
+							},
+							"response": []
+						},
+						{
+							"name": "updateUser",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userName\": \"Jonay\",\r\n    \"password\": \"$2a$10$elxPFvjbdhmuLIjiuW8J5O5rkbnp3uw0zL.AuzvAJtaYp2mJF/e1y\",\r\n    \"email\": \"jonay2@email.com\",\r\n    \"admin\": true\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "http://localhost:8090/api/users/5"
+							},
+							"response": []
+						},
+						{
+							"name": "getUserById",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiI0Y2I1OGEwYi01N2MxLTQwNDEtYWJmZS05ZjgwOTM5ZjYzN2QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJKb25heTIiLCJhdWQiOiJnYXRld2F5LWFwcCIsIm5iZiI6MTc1MDc1MzY4OSwiZGF0YSI6ImRhdG9zIGFkaWNpb25hbGVzIGVuIGVsIHRva2VuIiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6Imh0dHA6Ly8xMjcuMC4wLjE6OTEwMCIsImV4cCI6MTc1MDc1Mzk4OSwiaWF0IjoxNzUwNzUzNjg5LCJqdGkiOiJlMzQxMWNlZC1hZGM5LTQ0ZDctOTdhYy1iYzM3ZTU2ODljOWMifQ.iBnJI3PvyHk1uQc8PMAFPtyFaW5V0Ie4m6S9cJPM0hkwtWgxWlBiUnMPE2Pj1ZnnjU_mh-7NSmIPFV-RHco_n9W-8XUgH4x_vsQxvbthNJyOCobraLagWnhaN-hI7od9ZkbK-LizaNuPSlY_UW0K0gRAYMr4Q8xYNXouNrUWirXIYeAgA5OSWEQf-EFZUdgINi4AUCu13CNpVr34IiBYdgmHdhLdimAdDUFj-z0UnPSpSjryr7KOQmjekc12iGu0g6enn0H55rjx6AFLkvwKvqmgfIDoFCHAG1CpjDZrsJz3d7HitWoRfd2-NpF9THnxaXq_29nDjVgY83BBRTGVmA"
+									}
+								},
+								"method": "GET",
+								"header": [],
+								"url": "http://localhost:8090/api/users/7"
+							},
+							"response": []
+						},
+						{
+							"name": "delteUser",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": {
+										"token": "eyJraWQiOiI0Y2I1OGEwYi01N2MxLTQwNDEtYWJmZS05ZjgwOTM5ZjYzN2QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJKb25heTIiLCJhdWQiOiJnYXRld2F5LWFwcCIsIm5iZiI6MTc1MDc1MzY4OSwiZGF0YSI6ImRhdG9zIGFkaWNpb25hbGVzIGVuIGVsIHRva2VuIiwic2NvcGUiOlsib3BlbmlkIiwicHJvZmlsZSJdLCJyb2xlcyI6WyJST0xFX0FETUlOIiwiUk9MRV9VU0VSIl0sImlzcyI6Imh0dHA6Ly8xMjcuMC4wLjE6OTEwMCIsImV4cCI6MTc1MDc1Mzk4OSwiaWF0IjoxNzUwNzUzNjg5LCJqdGkiOiJlMzQxMWNlZC1hZGM5LTQ0ZDctOTdhYy1iYzM3ZTU2ODljOWMifQ.iBnJI3PvyHk1uQc8PMAFPtyFaW5V0Ie4m6S9cJPM0hkwtWgxWlBiUnMPE2Pj1ZnnjU_mh-7NSmIPFV-RHco_n9W-8XUgH4x_vsQxvbthNJyOCobraLagWnhaN-hI7od9ZkbK-LizaNuPSlY_UW0K0gRAYMr4Q8xYNXouNrUWirXIYeAgA5OSWEQf-EFZUdgINi4AUCu13CNpVr34IiBYdgmHdhLdimAdDUFj-z0UnPSpSjryr7KOQmjekc12iGu0g6enn0H55rjx6AFLkvwKvqmgfIDoFCHAG1CpjDZrsJz3d7HitWoRfd2-NpF9THnxaXq_29nDjVgY83BBRTGVmA"
+									}
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": "localhost:8090/api/users/9"
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Security",
+					"item": [
+						{
+							"name": "Reactive",
+							"item": [
+								{
+									"name": "1_getGetFormUrl",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:8090/login/oauth2/code/client-app"
+									},
+									"response": []
+								},
+								{
+									"name": "2_getForm",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:8090/oauth2/authorization/client-app"
+									},
+									"response": []
+								},
+								{
+									"name": "3_login",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "username",
+													"value": "Jonay2",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://127.0.0.1:9100/login"
+									},
+									"response": []
+								},
+								{
+									"name": "4_getToken",
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": {
+												"password": "1234",
+												"username": "gateway-app"
+											}
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "hFmQhVh9-qUSSn9JKGO_iQtloPi86lVF-yNvE7q_uWSphKNdNo04LL-vdaql1DwxIhqz69BIfeUBWiz4ApvUdaliQ5k3oYRqs2SA8N450eB1AjjvUbUB7P76_XHCtwOp",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://127.0.0.1:8090/authorized",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://127.0.0.1:9100/oauth2/token"
+									},
+									"response": []
+								}
+							]
+						},
+						{
+							"name": "MVC",
+							"item": [
+								{
+									"name": "1_getForm",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": "http://127.0.0.1:8090/oauth2/authorization/client-app"
+									},
+									"response": []
+								},
+								{
+									"name": "2_login",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"let jsonData = pm.response.json();\r",
+													"if (jsonData.code !== undefined) {\r",
+													"    pm.environment.set(\"code\", jsonData.code);\r",
+													"}"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "username",
+													"value": "Jonay2",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "1234",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://127.0.0.1:9100/login"
+									},
+									"response": []
+								},
+								{
+									"name": "3_getToken",
+									"event": [
+										{
+											"listen": "test",
+											"script": {
+												"exec": [
+													"// Guarda los valores de access_token y refresh_token en variables de entorno\r",
+													"let jsonData = pm.response.json();\r",
+													"\r",
+													"if (jsonData.access_token !== undefined) {\r",
+													"    pm.environment.set(\"access_token\", jsonData.access_token);\r",
+													"}\r",
+													"\r",
+													"if (jsonData.refresh_token !== undefined) {\r",
+													"    pm.environment.set(\"refresh_token\", jsonData.refresh_token);\r",
+													"}"
+												],
+												"type": "text/javascript",
+												"packages": {}
+											}
+										}
+									],
+									"request": {
+										"auth": {
+											"type": "basic",
+											"basic": {
+												"password": "1234",
+												"username": "gateway-app"
+											}
+										},
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "urlencoded",
+											"urlencoded": [
+												{
+													"key": "code",
+													"value": "{{code}}",
+													"type": "text"
+												},
+												{
+													"key": "grant_type",
+													"value": "authorization_code",
+													"type": "text"
+												},
+												{
+													"key": "redirect_uri",
+													"value": "http://127.0.0.1:8090/authorized",
+													"type": "text"
+												}
+											]
+										},
+										"url": "http://127.0.0.1:9100/oauth2/token"
+									},
+									"response": []
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "getProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:53306"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Items",
+			"item": [
+				{
+					"name": "fetchConfigsItems",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:8005/fetch-configs"
+					},
+					"response": []
+				},
+				{
+					"name": "refreshWithActuator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "http://localhost:8005/actuator/refresh"
+					},
+					"response": []
+				},
+				{
+					"name": "getProducts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8005"
+					},
+					"response": []
+				},
+				{
+					"name": "getProductById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8005/5"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ConfigServer",
+			"item": [
+				{
+					"name": "getConfigurationsConfigServer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "localhost:8888/msvc-items/dev"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "getUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:63485"
+					},
+					"response": []
+				},
+				{
+					"name": "createUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Jonay2\",\r\n    \"password\": \"1234\",\r\n    \"email\": \"jonay3@email.com\",\r\n    \"admin\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:64880"
+					},
+					"response": []
+				},
+				{
+					"name": "updateUser",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userName\": \"Jonay\",\r\n    \"password\": \"1234\",\r\n    \"email\": \"jonay2@email.com\",\r\n    \"enabled\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:64880/5"
+					},
+					"response": []
+				},
+				{
+					"name": "getUserById",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://localhost:63485/4"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
